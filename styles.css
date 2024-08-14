@@ -1,0 +1,199 @@
+body {
+    font-family: 'HankenGrotesk', 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.result-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 600px;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.score-section {
+    background: linear-gradient(180deg, #6642fe 0%, #332ceb 100%);
+    color: white;
+    border-radius: 15px;
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    /*Center the score section element*/
+}
+
+
+.score-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(180deg, #4a23cb 0%, #4633ed 100%);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+
+.score-value {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.score-total {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.score-text {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.score-subtext {
+    font-size: 14px;
+    color: #D4C3FF;
+}
+
+/*
+This wrapper is used to help center the circle
+*/
+.score-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.summary-section {
+    padding: 40px;
+    flex: 1;
+    background-color: #f4f4f6;
+}
+
+.summary-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #2B2D42;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Center items vertically */
+    padding: 10px 15px;
+    background-color: #f8f8fa;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Define colors for each category */
+.summary-item.reaction {
+    background-color: rgba(233, 141, 131, 0.1);
+    /* Light red */
+    color: #FF6347;
+    /* Red text color */
+}
+
+.summary-item.memory {
+    background-color: rgba(255, 215, 0, 0.1);
+    /* Light yellow */
+    color: #FFD700;
+    /* Yellow text color */
+}
+
+.summary-item.verbal {
+    background-color: rgba(144, 238, 144, 0.1);
+    /* Light green */
+    color: #32CD32;
+    /* Green text color */
+}
+
+.summary-item.visual {
+    background-color: rgba(116, 194, 217, 0.1);
+    /* Light blue */
+    color: #4682B4;
+    /* Blue text color */
+}
+
+.summary-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    /* Space between icon and text */
+}
+
+.summary-label {
+    color: #7B7F9E;
+    display: flex;
+    align-items: center;
+    /* Align icon and text */
+}
+
+
+.summary-score {
+    color: #2B2D42;
+    font-weight: bold;
+}
+
+.continue-btn {
+    width: 100%;
+    background-color: #303a5a;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.continue-btn:hover {
+    background-color: #4A4C6B;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('./assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('./assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('./assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
